@@ -1,5 +1,10 @@
 require 'faker'
 
+Post.create!(
+	title: "Hello World",
+	body: "This will change the world"
+	)
+
 #Create Posts
 50.times do 
 	Post.create!(
@@ -15,6 +20,19 @@ posts = Post.all
 	Comment.create!(
 		post: posts.sample,
 		body: Faker::Lorem.paragraph
+		)
+end
+
+Advertisement.create!(
+	title: "Hello Better World",
+	copy: "Get your better world here"
+	)
+
+#Create Advertisements
+50.times do 
+	Advertisement.create!(
+		title: Faker::Lorem.sentence,
+		copy: Faker::Lorem.paragraph
 		)
 end
 	
