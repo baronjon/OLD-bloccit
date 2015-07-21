@@ -1,0 +1,8 @@
+<h1>All Querys</h1>
+<% @querys.each do |query| %>
+	
+<p><%= link_to query.title, query %> <input type="checkbox" id="query_answered" name="query[validated]" value="yes" /></p>
+<% end %>
+
+	
+

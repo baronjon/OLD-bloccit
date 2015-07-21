@@ -17,7 +17,17 @@ posts = Post.all
 		body: Faker::Lorem.paragraph
 		)
 end
+
+#Create Querys
+25.times do
+	Query.create!(
+		title: Faker::Lorem.sentence,
+		body: Faker::Lorem.paragraph
+		)
+end
+querys = Query.all
 	
 puts "Seed finished"
 puts "#{Post.count} posts created"
 puts "#{Comment.count} comments created"
+puts "#{Query.count} querys created"
