@@ -27,6 +27,9 @@ gem 'jquery-rails'
 #use faker for seeding data
 gem 'faker'
 
+#to keep API keys private
+gem 'figaro', '1.0'
+
 #use devise for user authentication
 gem 'devise'
 
