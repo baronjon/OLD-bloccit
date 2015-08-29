@@ -68,3 +68,10 @@ end
 
 gem 'bootstrap-sass'
 
+#add mini magic and carrier wave to upload images
+gem 'carrierwave'
+gem 'mini_magick'
+
+#add fog to make uploading to s3 easier
+gem 'fog'
+
