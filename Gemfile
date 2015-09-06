@@ -75,3 +75,6 @@ gem 'mini_magick'
 #add fog to make uploading to s3 easier
 gem 'fog'
 
+#will paginate allows us to paginate posts and topics
+gem 'will_paginate', '~>3.0.5'
+
